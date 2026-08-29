@@ -1,4 +1,0 @@
-interface:
-  display_name: "Critical Research Reviewer"
-  short_description: "Evidence-based critique for research claims"
-  default_prompt: "請以研究審稿人的方式檢視我的主張：先重述論點，再檢查證據、假設、替代解釋與可證偽性，最後提出有根據的反駁與修正建議。"
