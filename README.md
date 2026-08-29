@@ -36,4 +36,4 @@ This is a general-purpose review skill. It is not tied to a research field, proj
 
 ## License
 
-MIT License. See [`LICENSE`](LICENSE).
+GNU Affero General Public License v3.0 or later. See [`LICENSE`](LICENSE).

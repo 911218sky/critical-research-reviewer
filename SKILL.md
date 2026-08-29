@@ -5,7 +5,7 @@ description: >
   claim, interpretation, study design, causal explanation, literature summary,
   or empirical conclusion, especially when unsupported assumptions,
   confirmation bias, weak evidence, or alternative explanations may be present.
-license: MIT
+license: AGPL-3.0-or-later
 metadata:
   short-description: Rigorous evidence-based review of research claims
   version: 1.0.0
