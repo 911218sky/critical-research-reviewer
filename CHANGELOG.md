@@ -6,4 +6,4 @@
 - Removed project-specific examples and platform-specific installation language.
 - Removed platform-specific agent metadata.
 - Added explicit source provenance, evidence-scope, uncertainty, and tool-availability rules.
-- Added GNU Affero General Public License v3.0 or later licensing and standalone project documentation.
+- Added the complete GNU Affero General Public License v3.0 or later text and standalone project documentation.
