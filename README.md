@@ -11,8 +11,19 @@ A portable Markdown skill for rigorous, constructive evaluation of research clai
 - Develops alternative explanations and concrete tests that can distinguish them.
 - Reports sources transparently, including the source type and whether the material was checked in full text, an abstract, metadata, or a summary.
 - Ends with a calibrated assessment and a useful next step.
+- Supports a five-role panel: opposition, questioner, opportunity, outsider, and executor, followed by mutual examination and a chair's synthesis.
 
 The skill never fabricates citations, results, tool calls, source access, or full-text verification. It does not force a literature search when the request is only a writing edit or does not require external evidence.
+
+## Modes
+
+`standard` is the default and preserves the single-reviewer workflow. Use `panel` or `five-role` when you want all five perspectives to debate the same problem and a chair to issue a final verdict. You can also request one role directly with `role:opposition`, `role:questioner`, `role:opportunity`, `role:outsider`, or `role:executor`.
+
+Example request:
+
+> 用 `panel` 模式審查這個方案：讓五個角色先獨立分析，再互相省察，最後由主席給出結論、停止條件，以及今天唯一要做的下一步。
+
+Panel mode costs more reasoning and produces more output. It is most useful for consequential decisions, weak evidence, competing explanations, or a plan that may be based on an untested assumption. When the environment has no multi-agent runtime, the skill runs five isolated passes with the same model and reports that limitation; it must not claim that five independent AIs actually ran.
 
 ## Installation
 
