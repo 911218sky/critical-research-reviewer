@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.3.0 - 2026-09-15
+
+- Added context tuning table: specialized problems → extended isolation (Kavadias 2009); high stakes → reflexivity (Leblanc 2024).
+- Phase 2 now includes explicit reflexivity checkpoint on shared assumptions and momentum vs merit.
+- Phase 3 convergent refinement uses idea anonymity—options restated without role attribution (Baruah 2023).
+- Clarified chair uses authority at phase boundaries, not early substantive verdicts (Heldal 2023; Kundi 2023).
+- Added facilitation question bank, panel quality rubric, and pre-delivery self-check in SKILL.md.
+- New failure modes: convergent authorship anchoring, premature emotional opening, passive chairing.
+- Expanded bibliography: Ahn, Baruah, Černe, Kavadias, Puccio.
+
 ## 1.2.0 - 2026-09-15
 
 - Added evidence-based panel design section grounded in Consensus literature on team creativity, facilitation, psychological safety, and groupthink prevention.

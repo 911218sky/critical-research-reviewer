@@ -2,7 +2,7 @@
 
 A portable Markdown skill for rigorous, constructive evaluation of research claims, interpretations, study designs, and empirical conclusions.
 
-**Version:** 1.2.0
+**Version:** 1.3.0
 
 ## What it does
 
@@ -35,7 +35,9 @@ Version 1.2.0 adds literature-backed discussion design:
 - **Explicit chair role**: withholds early verdict, asks validation/reflection questions, surfaces hidden profiles, and preserves minority objections.
 - **Research anchors**: hybrid brainstorming, psychological safety, authentic dissent, and anti-groupthink facilitation.
 
-See [`reference.md`](reference.md) for the bibliography and chair checklist.
+Version 1.3.0 adds context tuning (problem structure, stakes), Phase 2 reflexivity checkpoint, Phase 3 convergent anonymity, facilitation question bank, and a panel self-check rubric.
+
+See [`reference.md`](reference.md) for the bibliography, chair checklist, and quality rubric.
 
 ## Installation
 

@@ -14,6 +14,11 @@ This file anchors the `panel` / `five-role` workflow in published research. Use 
 | Groups refine better than they invent | Phase 3 improves surviving options | McMahon et al. (2016) |
 | Avoid herding | Chair probes non-convergent risks | Pick et al. (2024) |
 | No participation gamification | Do not optimize for equal talk time | Hong et al. (2026) |
+| Convergent anonymity | Phase 3 options without role attribution | Baruah et al. (2023) |
+| Reflexivity checkpoint | Phase 2 pause on assumptions and momentum | Leblanc et al. (2024) |
+| Problem-structure tuning | Extend isolation for specialized problems | Kavadias et al. (2009) |
+| Boundary authority | Chair enforces phases, not early substance | Heldal (2023); Kundi et al. (2023) |
+| Idea championing | Opportunity role names who moves best option forward | Černe et al. (2022) |
 
 ## Chair behavior checklist
 
@@ -35,10 +40,41 @@ Before final verdict:
 - [ ] Retain well-supported dissent
 - [ ] Hand exactly one action to executor logic
 
-## Consensus queries used for v1.2.0
+
+## Facilitation question bank (Phase 2–3)
+
+Use 2–4 per session; do not interrogate every role on every question.
+
+- What would change your verdict if we learned X?
+- What are we all assuming without checking?
+- Are we converging because of evidence or because someone spoke first?
+- Which option survives if we remove the most optimistic assumption?
+- What is the smallest test that would falsify the leading view?
+- Who owns moving the best surviving option to the next stage?
+- What minority objection deserves to stay on the record even if we proceed?
+
+## Panel quality rubric
+
+| Dimension | Weak (1) | Strong (3) |
+| --- | --- | --- |
+| Independence | Roles echo same premises | Distinct angles with labeled evidence |
+| Dissent quality | Performative contrarianism | Authentic, testable objections |
+| Chair facilitation | Early verdict or passive drift | Phase boundaries + withheld preference |
+| Convergence | False consensus | Anonymized refinement of 1–2 survivors |
+| Actionability | Task list without priority | One time-boxed action tied to uncertainty |
+
+## Consensus queries
+
+### v1.2.0
 
 1. `What team characteristics and discussion practices lead to more creative ideas and innovation in group brainstorming?`
 2. `How should a discussion facilitator or chair behave to improve team decision quality, psychological safety, and avoid groupthink?`
+
+### v1.3.0 follow-ups (2026-09-15)
+
+3. Confirmed: anonymity helps **convergent** not divergent phase (Baruah 2023)
+4. Confirmed: reflexivity checkpoint improves decision quality under boundary conditions (Leblanc 2024)
+5. Confirmed: specialized problems benefit from extended nominal-style isolation (Kavadias 2009)
 
 ## Selected bibliography
 
@@ -63,3 +99,8 @@ Before final verdict:
 - Schulz-Hardt, S., et al. (2006). Group decision making in hidden profile situations. *Journal of Personality and Social Psychology*.
 - Somech, A., & Drach-Zahavy, A. (2013). Translating team creativity to innovation implementation. *Journal of Management*.
 - Witherell, C., et al. (2026). The art of facilitation: trust and psychological safety in design teams. *Journal of Mechanical Design*.
+- Ahn, P., et al. (2023). Innovative ideas desire earlier communication. *Journal of Organizational Behavior*.
+- Baruah, J., et al. (2023). Innovation in virtual teams: anonymity across divergent and convergent thinking. *Journal of Creative Behavior*.
+- Černe, M., et al. (2022). Idea championing as a missing link between idea generation and implementation. *Human Resource Management Review*.
+- Kavadias, S., & Sommer, S. C. (2009). The effects of problem structure and team diversity on brainstorming effectiveness. *Management Science*.
+- Puccio, G. J., et al. (2018). Creative problem solving in small groups. *Journal of Creative Behavior*.

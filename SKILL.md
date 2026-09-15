@@ -9,7 +9,7 @@ description: >
 license: AGPL-3.0-or-later
 metadata:
   short-description: Rigorous evidence-based review of research claims
-  version: 1.2.0
+  version: 1.3.0
 ---
 
 # Critical Research Reviewer
@@ -55,13 +55,26 @@ Panel mode is not free-form debate. Research on group creativity and decision qu
 
 Functional role heterogeneity improves team creativity more reliably than demographic diversity alone (Somech & Drach-Zahavy, 2013; Byron et al., 2022). The five roles are deliberately different **cognitive jobs**, not five copies of the same reviewer with different tone.
 
+
+### Context tuning (before choosing panel depth)
+
+Match panel structure to problem type and stakes. Do not run a full five-phase panel for trivial edits.
+
+| Signal | Adjust protocol | Research anchor |
+| --- | --- | --- |
+| **Specialized / technical problem** | Extend Phase 1 isolation; nominal-style independent passes beat early group talk | Kavadias et al., 2009 |
+| **High stakes or weak evidence** | Full panel + reflexivity checkpoint in Phase 2 | Leblanc et al., 2024 |
+| **Many competing alternatives** | Phase 3 refinement with **idea anonymity**: judge options without anchoring on who proposed them | Baruah et al., 2023 |
+| **Untrained participants / first use** | Strict visible phase structure helps even without creativity training | Puccio et al., 2018 |
+| **Need implementation, not just ideas** | Add opportunity-role **championing** step: who owns moving the best option forward | Černe et al., 2022 |
+
 ### Phase map (generate → examine → refine → decide)
 
 | Phase | Goal | Research anchor |
 | --- | --- | --- |
 | **0. Chair packet & norms** | Shared problem definition, visible norms, no early verdict | Leblanc et al., 2024; Jones et al., 2024 |
 | **1. Independent divergent pass** | Each role analyzes alone; no cross-reading | Hybrid brainstorming / nominal group technique (Korde & Paulus, 2017; Girotra et al., 2010) |
-| **2. Mutual examination** | Surface hidden profiles, dissent, duplicates, shared premises | Schulz-Hardt et al., 2006; De Dreu & West, 2001 |
+| **2. Mutual examination + reflexivity** | Surface hidden profiles, dissent, duplicates, shared premises; brief pause on *how* the group is deciding | Schulz-Hardt et al., 2006; De Dreu & West, 2001; Leblanc et al., 2024 |
 | **3. Convergent refinement** | Improve the best surviving options; groups excel here | McMahon et al., 2016; Baruah et al., 2023 |
 | **4. Chair synthesis & second chance** | Verdict, minority retention, one action | DiPierro et al., 2021; Leana, 1985 |
 
@@ -75,6 +88,9 @@ Functional role heterogeneity improves team creativity more reliably than demogr
 6. **Do not gamify speaking time.** Real-time participation feedback can reduce idea fluency and autonomy (Hong et al., 2026).
 7. **Prefer authentic minority dissent over performative devil's advocacy.** Dissent helps when participation is real and concerns are substantive; rotating contrarians without genuine reasoning adds noise (De Dreu & West, 2001; DiPierro et al., 2021).
 8. **Watch for herding.** Groups dominated by imitation produce fewer novel insights than groups maintaining cognitive flexibility (Pick et al., 2024).
+9. **Use authority at phase boundaries, not on substance early.** The chair enforces transitions, time boxes, and scope—but withholds preferred conclusions until after cross-review. High-performing teams combine disciplined structure with participative input, not passive chairing or premature directive verdicts (Heldal, 2023; Kundi et al., 2023).
+10. **Anonymize ideas in convergent refinement.** During Phase 3, restate surviving options without role attribution so evaluation tracks idea quality, not authorship or status (Baruah et al., 2023).
+11. **Run a reflexivity checkpoint in Phase 2.** Ask: "What are we assuming together?" "What evidence would change our mind?" "Are we converging because of merit or momentum?" (Leblanc et al., 2024).
 
 See [`reference.md`](reference.md) for the literature map and Consensus query templates used to derive these norms.
 
@@ -87,7 +103,7 @@ The panel has five fixed roles plus a chair. Their different incentives are deli
 The chair is a **facilitator**, not the smartest reviewer and not a tie-break vote. In `panel` mode the chair:
 
 1. **Creates the packet** (Phase 0): claim, decision, boundaries, success/failure, evidence on hand; states one explicit assumption if ambiguity remains.
-2. **Posts visible norms** for the session: independent Phase 1, no early verdict, dissent is welcome, evidence labels required.
+2. **Posts visible norms** for the session: independent Phase 1, no early verdict, dissent is welcome, evidence labels required. Optionally open with a one-minute norm recap when stakes are high (Jones et al., 2024).
 3. **Runs phase boundaries**: lock first-pass reports before cross-review; move to refinement only after hidden-profile and duplication checks.
 4. **Withholds preference** until after cross-review (Leana, 1985).
 5. **Asks validation/reflection questions** during examination: "What would change your verdict?" "What evidence would falsify this?" "What are we all assuming?" (McCardle-Keurentjes et al., 2018).
@@ -127,8 +143,8 @@ Run these stages in order:
 
 1. **Chair creates the packet (Phase 0).** Define the claim, decision, boundaries, success and failure conditions, current evidence, and session norms. Ask at most one clarifying question only if the ambiguity would materially change the review; otherwise state the assumption.
 2. **Independent first pass (Phase 1).** Run all five roles against the same packet. Before all five first reports are locked, no role may read another role's report. Each report must contain: role verdict; three highest-impact findings; evidence and inspection scope; assumptions; unknowns; concrete questions for the other roles; and proposed tests or actions. Keep divergent output separate from refinement.
-3. **Mutual examination (Phase 2).** Give the locked first-pass reports to every role. Each role must identify one point from the other reports worth retaining and one that most needs challenge, then identify at least one contradiction, duplication, omission, or shared unverified premise. It must answer the strongest challenge to its own view and may reduce confidence, withdraw, or revise its position. Convert disputes into testable questions. Limit each role to two cross-role issues so the panel does not become twenty unstructured conversations. The chair should explicitly hunt for **hidden profiles**: information that would change the decision if shared (Schulz-Hardt et al., 2006).
-4. **Convergent refinement (Phase 3).** The chair selects the top one or two surviving claims, interpretations, or action paths. Roles may improve clarity, testability, and risk controls on those options only. Do not restart brainstorming from zero.
+3. **Mutual examination + reflexivity (Phase 2).** Give the locked first-pass reports to every role. Each role must identify one point from the other reports worth retaining and one that most needs challenge, then identify at least one contradiction, duplication, omission, or shared unverified premise. It must answer the strongest challenge to its own view and may reduce confidence, withdraw, or revise its position. Convert disputes into testable questions. Limit each role to two cross-role issues so the panel does not become twenty unstructured conversations. The chair should explicitly hunt for **hidden profiles**: information that would change the decision if shared (Schulz-Hardt et al., 2006). End Phase 2 with a **reflexivity checkpoint**: shared assumptions, momentum vs merit, and one thing still untested (Leblanc et al., 2024).
+4. **Convergent refinement (Phase 3).** The chair selects the top one or two surviving claims, interpretations, or action paths. Restate them **without role attribution** so refinement judges idea quality, not status (Baruah et al., 2023). Roles may improve clarity, testability, and risk controls on those options only. Do not restart brainstorming from zero.
 5. **Chair synthesis & second chance (Phase 4).** The chair reads all reports, separates consensus, disagreement, and shared assumptions, and builds a claim/evidence/counterevidence/unknown/test matrix. Judge arguments by evidence quality and reasoning, not by role votes. Offer a brief second-chance prompt for minority objections. Preserve a well-supported minority objection instead of forcing consensus. Re-issue the calibrated verdict and produce one concrete action for today.
 
 The chair's final action must include: one priority action, owner or responsible party, minimum input, time box, definition of done, information expected, and how each possible result changes the decision. Also list the order of later actions, stop or reversal conditions, missing evidence, and retained minority objections.
@@ -193,5 +209,23 @@ For `panel` mode, use this additional structure:
 - **主席過度整合**：為了看起來一致而消除合理異議。保留異議並說明裁決依據。
 - **發言 KPI 化**：用發言次數或輪值監控製造參與感。避免 real-time participation feedback（Hong et al., 2026）。
 - **生成內容當證據**：直接採用角色提出的引用、數字或推測。所有外部主張回到來源規則重新驗證。
+- **收斂錨定作者**：Phase 3 仍標「反對派說…機會派說…」而讓人選邊站。改為匿名重述選項再評估（Baruah et al., 2023）。
+- **過早情感動員**：高風險時硬開脆弱分享反而傷害安全。依脈絡判斷是否做文化/情感介入（Jones et al., 2024）。
+- **主席只支持不結構**：全程和稀泥、不推 phase boundary。高績效團隊需要有紀律的 phase 管理（Heldal, 2023）。
+
+
+## Panel self-check (before delivering)
+
+Score honestly; if any item fails, revise before sending.
+
+| Check | Pass criterion |
+| --- | --- |
+| Phase isolation | Five Phase-1 reports were written without cross-reading |
+| Chair withheld verdict | No preferred conclusion before Phase 2 reflexivity |
+| Hidden profiles surfaced | At least one shared assumption or missing counterevidence named |
+| Convergent anonymity | Phase 3 options restated without role attribution |
+| Evidence hygiene | External claims re-verified; role outputs labeled as hypotheses |
+| One action | Exactly one priority action with owner, time box, definition of done |
+| Honest runtime | Subagent isolation vs same-model sequential simulation disclosed |
 
 Ask at most one clarifying question, and only when the ambiguity would materially change the review. Otherwise state a reasonable assumption and proceed.
