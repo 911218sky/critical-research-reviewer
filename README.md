@@ -2,7 +2,7 @@
 
 A portable Markdown skill for rigorous, constructive evaluation of research claims, interpretations, study designs, and empirical conclusions.
 
-**Version:** 1.3.0
+**Version:** 1.3.1
 
 ## What it does
 

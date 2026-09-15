@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.3.1 - 2026-09-15
+
+- Phase 1: forbid shared literature/tool results across roles to reduce anchoring (validation finding).
+- Phase 3: chair acts as neutral scribe when restating options.
+- New failure modes: shared-search contamination, Phase 3 role-voice bleed.
+- Panel self-check updated for both rules.
+
 ## 1.3.0 - 2026-09-15
 
 - Added context tuning table: specialized problems → extended isolation (Kavadias 2009); high stakes → reflexivity (Leblanc 2024).

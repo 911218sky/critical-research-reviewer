@@ -9,7 +9,7 @@ description: >
 license: AGPL-3.0-or-later
 metadata:
   short-description: Rigorous evidence-based review of research claims
-  version: 1.3.0
+  version: 1.3.1
 ---
 
 # Critical Research Reviewer
@@ -142,9 +142,9 @@ Answer only: **what must happen today?** Reduce the discussion to one smallest u
 Run these stages in order:
 
 1. **Chair creates the packet (Phase 0).** Define the claim, decision, boundaries, success and failure conditions, current evidence, and session norms. Ask at most one clarifying question only if the ambiguity would materially change the review; otherwise state the assumption.
-2. **Independent first pass (Phase 1).** Run all five roles against the same packet. Before all five first reports are locked, no role may read another role's report. Each report must contain: role verdict; three highest-impact findings; evidence and inspection scope; assumptions; unknowns; concrete questions for the other roles; and proposed tests or actions. Keep divergent output separate from refinement.
+2. **Independent first pass (Phase 1).** Run all five roles against the same packet. Before all five first reports are locked, no role may read another role's report. **Do not share literature-search or tool-call results across roles during Phase 1**—each role either searches within its own pass or explicitly records "no external search" to avoid shared-literature anchoring. Each report must contain: role verdict; three highest-impact findings; evidence and inspection scope; assumptions; unknowns; concrete questions for the other roles; and proposed tests or actions. Keep divergent output separate from refinement.
 3. **Mutual examination + reflexivity (Phase 2).** Give the locked first-pass reports to every role. Each role must identify one point from the other reports worth retaining and one that most needs challenge, then identify at least one contradiction, duplication, omission, or shared unverified premise. It must answer the strongest challenge to its own view and may reduce confidence, withdraw, or revise its position. Convert disputes into testable questions. Limit each role to two cross-role issues so the panel does not become twenty unstructured conversations. The chair should explicitly hunt for **hidden profiles**: information that would change the decision if shared (Schulz-Hardt et al., 2006). End Phase 2 with a **reflexivity checkpoint**: shared assumptions, momentum vs merit, and one thing still untested (Leblanc et al., 2024).
-4. **Convergent refinement (Phase 3).** The chair selects the top one or two surviving claims, interpretations, or action paths. Restate them **without role attribution** so refinement judges idea quality, not status (Baruah et al., 2023). Roles may improve clarity, testability, and risk controls on those options only. Do not restart brainstorming from zero.
+4. **Convergent refinement (Phase 3).** The chair selects the top one or two surviving claims, interpretations, or action paths. The chair acts as **neutral scribe**: restate options **without role attribution or role voice** so refinement judges idea quality, not status (Baruah et al., 2023). Roles may improve clarity, testability, and risk controls on those options only. Do not restart brainstorming from zero.
 5. **Chair synthesis & second chance (Phase 4).** The chair reads all reports, separates consensus, disagreement, and shared assumptions, and builds a claim/evidence/counterevidence/unknown/test matrix. Judge arguments by evidence quality and reasoning, not by role votes. Offer a brief second-chance prompt for minority objections. Preserve a well-supported minority objection instead of forcing consensus. Re-issue the calibrated verdict and produce one concrete action for today.
 
 The chair's final action must include: one priority action, owner or responsible party, minimum input, time box, definition of done, information expected, and how each possible result changes the decision. Also list the order of later actions, stop or reversal conditions, missing evidence, and retained minority objections.
@@ -195,6 +195,8 @@ For `panel` mode, use this additional structure:
 ## Panel failure modes
 
 - **假平行**：沒有 subagent 卻宣稱五個獨立 AI。改報為同一模型的隔離順序模擬。
+- **共享搜尋污染**：Phase 1 前做一次 literature pull，五角色都引用同一批結果。改為每角色獨立搜尋或明確標「未搜尋」。
+- **Phase 3 角色口吻**：收斂選項仍帶「反對派版／機會派版」標籤。改由主席中性重述。
 - **初審污染**：角色在第一輪先讀到別人的結論。先鎖定五份初稿，再進入互評。
 - **主席搶跑**：主席在 Phase 1 就暗示結論或偏好。延後 verdict，先問澄清與反證問題（Leana, 1985）。
 - **早鳥附和**：Phase 1 要求「接續別人想法」而抑制獨立判斷。分離 generate 與 refine（Girotra et al., 2010）。
@@ -220,10 +222,10 @@ Score honestly; if any item fails, revise before sending.
 
 | Check | Pass criterion |
 | --- | --- |
-| Phase isolation | Five Phase-1 reports were written without cross-reading |
+| Phase isolation | Five Phase-1 reports without cross-reading; no shared tool results in Phase 1 |
 | Chair withheld verdict | No preferred conclusion before Phase 2 reflexivity |
 | Hidden profiles surfaced | At least one shared assumption or missing counterevidence named |
-| Convergent anonymity | Phase 3 options restated without role attribution |
+| Convergent anonymity | Phase 3 options restated by chair as neutral scribe, no role voice |
 | Evidence hygiene | External claims re-verified; role outputs labeled as hypotheses |
 | One action | Exactly one priority action with owner, time box, definition of done |
 | Honest runtime | Subagent isolation vs same-model sequential simulation disclosed |
